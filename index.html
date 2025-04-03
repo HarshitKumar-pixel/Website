@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscape Transformation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2a2a2a;
+            padding: 15px;
+        }
+        .navbar a {
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .hero img {
+            width: 50%;
+            border-radius: 10px;
+        }
+        .hero-text {
+            width: 40%;
+            padding-left: 20px;
+        }
+        .hero-text h1 {
+            color: #4caf50;
+            font-size: 36px;
+        }
+        .style-heading {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #4caf50;
+        }
+        .style-selection {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .style-box {
+            background-color: #2a2a2a;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .style-box img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .style-box img:hover {
+            transform: scale(1.05);
+        }
+        .style-box p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .selection-box {
+            background-color: #2a2a2a;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .selection-box select {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #333;
+            color: #e0e0e0;
+        }
+        .ai-analysis {
+            background-color: #2a2a2a;
+            padding: 30px;
+            margin: 40px auto;
+            width: 60%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .ai-analysis h2 {
+            color: #4caf50;
+        }
+        .ai-analysis p {
+            margin-bottom: 20px;
+        }
+        .ai-analysis .analysis-box {
+            width: 100%;
+            height: 300px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #bbb;
+            font-weight: bold;
+        }
+        .inquiry-button {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .inquiry-button button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .inquiry-button button:hover {
+            background-color: #388e3c;
+        }
+        #butt{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+    </div>
+    <div class="hero">
+        <img src="istockphoto-2112749005-612x612.jpg" alt="Landscape Transformation">
+        <div class="hero-text">
+            <h1>Transforming Landscapes, One Step at a Time</h1>
+            <p>We bring nature to life with innovative landscape designs that enhance beauty and sustainability.</p>
+        </div>
+    </div>
+    <h2 class="style-heading">Choose Your Style</h2>
+    <div class="style-selection">
+        <div class="style-box">
+            <img src="picture 1.jpg" alt="Style 1">
+            <p>Home</p>
+        </div>
+        <div class="style-box">
+            <img src="picture 2.jpg" alt="Style 2">
+            <p>Office</p>
+        </div>
+        <div class="style-box">
+            <img src="picture 3.jpg" alt="Style 3">
+            <p>Township</p>
+        </div>
+        <div class="style-box">
+            <img src="picture 4.jpg" alt="Style 4">
+            <p>Locality</p>
+        </div>
+    </div>
+    <div class="selection-box">
+        <h2>Select Your Location</h2>
+        <select>
+            <option value="">Select State</option>
+            <option value="">Uttar Pradesh</option>
+            <option value="">Punjab</option>
+        </select>
+        <select>
+            <option value="">Select City</option>
+            <option value="">Lucknow</option>
+            <option value="">Gonda</option>
+        </select>
+        <select>
+            <option value="">Select Locality</option>
+            <option value="">Gomti Nagar</option>
+            <option value="">Indra Nagar</option>
+        </select>
+    </div>
+    <div class="ai-analysis">
+        <h2>Analyze Your Space</h2>
+        <p>Use our AI-powered 3D tool to visualize and plan your landscape transformation.</p>
+        <div class="analysis-box">3D AI Tool Simulation</div>
+    </div>
+    <div class="inquiry-button">
+        <button><a id="butt" href="inquiry.html">Request Inquiry</a></button>
+    </div>
+</body>
+</html>
